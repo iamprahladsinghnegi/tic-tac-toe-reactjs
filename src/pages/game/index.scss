@@ -1,0 +1,119 @@
+.game{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-header{
+            display: flex;
+            margin-bottom: 100px;
+            justify-content: space-between;
+            min-width: 500px;
+            &-title{
+                padding: 12px;;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 200px;
+                background-color: white;
+                border-radius: 5px; 
+                text-align: center;
+                border-bottom: 3px solid #EEC0C6;
+                &-left{
+                    float: left;
+                }
+                &-right{
+                    float: right;
+                }
+            }
+            .bdr-green{
+                border-bottom: 5px solid #80FF72;
+            }
+            .bdr-gray{
+                border-color: #EEC0C6;
+            }
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-result{
+            text-align: center;
+            h1{
+                font-size: 164px;
+                margin: 0;
+                color: white;
+                line-height: 1;
+            }
+            h2{
+                margin-top: 12px !important;
+                color: #323232;
+                margin: 0;
+                font-size: 44px;
+            }
+            &-button{
+                width: 100%;
+                color: black;
+                border: none;
+                padding: 14px 28px;
+                cursor: pointer;
+                margin-top: 12px;
+                outline: none;
+                background: inherit;
+                font-size: 20px;
+                letter-spacing: 1.1px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .game{
+        &-content{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &-header{
+                margin-bottom: 75px;
+                display: flex;
+                justify-content: space-around;
+                min-width: 100%;
+                &-title{
+                    width: 100px;
+                }
+            }
+              
+            &-result{
+                text-align: center;
+                h1{
+                    font-size: 120px;
+                }
+                h2{
+                    color: #323232;
+                    margin: 0;
+                    font-size: 30px;
+                }
+                &-button{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+    
+}

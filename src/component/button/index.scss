@@ -1,0 +1,29 @@
+.btn{
+    &-primary{
+        background-color: #4CAF50;
+    }
+    &-secondary{
+        background-color: #2196F3;
+    }
+}
+
+button{
+    border: none; 
+    color: white; 
+    padding: 14px 28px;
+    cursor: pointer;
+    width: 75%;
+    border-radius: 20px;
+    margin-top: 12px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    button{
+        padding: 12px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    
+}
